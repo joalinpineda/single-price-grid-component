@@ -22,8 +22,8 @@ body{
     background-color: var(--light-gray);
 }
 .container{
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    max-height: 400px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
@@ -31,6 +31,7 @@ body{
     
 }
 .container .join{
+ 
     background-color: white;
     grid-column:1/3;
     padding: 40px;
@@ -56,6 +57,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
 }
 .container .why{
     background-color: var(--cyan);
@@ -63,9 +65,11 @@ body{
 }
 .why h4{
     margin-bottom: 24px;
+ 
 }
-.why p{
-  font-size: 14px;
+.why ul{
+    font-size: 14px;
+    list-style: none;
 }
 .cost{
     display: flex;
@@ -74,6 +78,9 @@ body{
 .cost h2{
     margin-right: 10px;
 }
+.cost small{
+    color: hsl(219, 17%, 81%);
+}
 .subcription p{
     font-size: 12px;
 }
@@ -81,7 +88,7 @@ body{
     color: white;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 200px;
     height: 40px;
     background-color: var(--bright-yellow);
@@ -111,7 +118,7 @@ footer{
         color: var(--graylish-blue);
     }
     .subcription{
-        align-items: center;
+        align-items: center; 
     }
     footer{
         display: none;
